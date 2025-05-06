@@ -32,7 +32,7 @@ form8ion plugin for managing Octokit plugins
 ### Installation
 
 ```sh
-$ npm install @form8ion/octokit-plugin
+$ npm install @form8ion/octokit-plugin --save-prod
 ```
 
 ### Example
