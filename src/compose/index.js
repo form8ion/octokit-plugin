@@ -1,1 +1,1 @@
-export {default as scaffold} from './scaffold.js';
+export {default as scaffold} from './scaffolder.js';

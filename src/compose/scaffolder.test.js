@@ -5,7 +5,7 @@ import any from '@travi/any';
 import {when} from 'vitest-when';
 
 import determinePathToTemplateFile from '../template-path.js';
-import scaffoldCompose from './scaffold.js';
+import scaffoldCompose from './scaffolder.js';
 
 vi.mock('node:fs');
 vi.mock('../template-path.js');
