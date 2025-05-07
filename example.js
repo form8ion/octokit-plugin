@@ -4,7 +4,7 @@ import stubbedFs from 'mock-fs';
 import {scaffold} from './lib/index.js';
 
 // remark-usage-ignore-next
-stubbedFs();
+stubbedFs({templates: stubbedFs.load('templates')});
 
 // #### Execute
 
