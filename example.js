@@ -8,6 +8,4 @@ stubbedFs({templates: stubbedFs.load('templates')});
 
 // #### Execute
 
-(async () => {
-  await scaffold({projectRoot: process.cwd()});
-})();
+await scaffold({projectRoot: process.cwd()});

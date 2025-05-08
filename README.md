@@ -48,9 +48,7 @@ import {scaffold} from '@form8ion/octokit-plugin';
 #### Execute
 
 ```javascript
-(async () => {
-  await scaffold({projectRoot: process.cwd()});
-})();
+await scaffold({projectRoot: process.cwd()});
 ```
 
 ## Contributing
