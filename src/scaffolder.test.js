@@ -17,7 +17,8 @@ describe('scaffolder', () => {
   it('should define the plugin and the compose capability', async () => {
     const projectRoot = any.string();
 
-    expect(await scaffold({projectRoot})).toEqual({});
+    expect(await scaffold({projectRoot}))
+      .toEqual({dependencies: {javascript: {peer: ['@octokit/core'], development: ['@octokit/core']}}});
 
     expect(scaffoldCompose).toHaveBeenCalledWith({projectRoot});
     expect(scaffoldPlugin).toHaveBeenCalledWith({projectRoot});

@@ -12,5 +12,12 @@ export default async function scaffold({projectRoot}) {
     fs.cp('./templates/index.js', `${projectRoot}/src/index.js`)
   ]);
 
-  return {};
+  return {
+    dependencies: {
+      javascript: {
+        peer: ['@octokit/core'],
+        development: ['@octokit/core']
+      }
+    }
+  };
 }
